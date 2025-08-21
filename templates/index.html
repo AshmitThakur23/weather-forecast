@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="weather-card">
+        <h2>AI Weather App 🌤️
+
+        </h2>
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <br>
+        <button onclick="getWeather()">Get Weather</button>
+
+        <div class="weather-result" id="weatherResult"></div>
+    </div>
+
+    <script>
+        async function getWeather() {
+            const city = document.getElementById('cityInput').value.trim();
+            if (!city) {
+                alert("Please enter a city name!");
+                return;
+            }
+
+            try {
+                const response = await fetch(`/weather?city=${city}`);
+                const data = await response.json();
+
+                const resultDiv = document.getElementById('weatherResult');
+
+                if (data.error) {
+                    resultDiv.innerHTML = `<p>${data.error}</p>`;
+                } else {
+                    resultDiv.innerHTML = `
+                        <h3>${data.city}</h3>
+                        <p><b>Temperature:</b> ${data.temperature}°C</p>
+                        <p><b>Description:</b> ${data.description}</p>
+                        <p><b>Humidity:</b> ${data.humidity}%</p>
+                        <p><b>Wind Speed:</b> ${data.wind_speed} m/s</p>
+                    `;
+                }
+            } catch (error) {
+                alert("Failed to fetch weather. Please try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
