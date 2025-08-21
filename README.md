@@ -1,37 +1,57 @@
-Python - Flask
-======================
-This is a simple Python - Flask application. This application serves as a basic template for a web server using python for the backend, flask as the web application framework.
+# 🌤️ Weather Forecast App
 
-What does this application do?
--------------------------------
-This application serves a simple web server that listens on defined port, default: `5000`.
+This is a simple web application that fetches and displays real-time weather and humidity data.
 
+## 🌟 Features
 
-# How to run?
-You can run the application in one of the following ways:
+- **Live Weather Data**: Get the current temperature and conditions for any city.
+- **Humidity Levels**: View the humidity percentage for accurate information.
+- **Responsive Design**: A clean, modern interface that works on both desktop and mobile devices.
 
-1. Press `F5`. This will start the application in debug mode.
+## 🛠️ Technology Stack
 
-2. Open a terminal by going to 'View' -> 'Terminal'. Then, run following command: 
-   > `flask --app app.py run --host=0.0.0.0 --port=5000 --debug`
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Flask (Python)
+- **API**: [OpenWeatherMap API](https://openweathermap.org/api)
 
-This will start the application in development mode.
+## 🚀 Getting Started
 
+### Prerequisites
 
-Via curl command:
------------------
-1. Open a terminal.
-2. Type the following command: 
-   > `curl http://localhost:5000`
-3. Press 'Enter' to make the request.
+- Python 3.x
+- A valid API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-Via Thunder Client:
--------------------
-1. Click on the Thunder Client icon on the activity bar on the side. If you can't find it, you can search for 'Thunder Client' in the 'View' -> 'Extensions' menu.
-2. Once Thunder Client is open, click on 'New Request'.
-3. In the 'Request URL' field, enter the URL of your application (e.g., http://localhost:5000) and select the HTTP method from the dropdown menu.
-5. Click on 'Send' to make the request.
+### Installation
 
-Visit [Flask Quickstart](https://flask.palletsprojects.com/en/latest/quickstart/) for more information.
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/AshmitThakur23/weather-forecast.git](https://github.com/AshmitThakur23/weather-forecast.git)
+    ```
+2.  Navigate into the project directory:
+    ```bash
+    cd weather-forecast
+    ```
+3.  Install the required Python packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Happy coding! 🙂
+### How to Run
+
+1.  Create a file named `.env` in the root directory and add your API key:
+    ```
+    API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+    ```
+2.  Run the Flask application:
+    ```bash
+    flask run
+    ```
+3.  Open your browser and go to `http://127.0.0.1:5000`.
+
+## 📸 Screenshots
+
+[Insert a screenshot of your working application here using an image link]
+
+## 🤝 Contribution
+
+Contributions are welcome! Please feel free to open a pull request or submit an issue.
