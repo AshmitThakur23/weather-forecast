@@ -1,57 +1,72 @@
-# 🌤️ Weather Forecast App
+🌤️ Weather Forecast App
 
-This is a simple web application that fetches and displays real-time weather and humidity data.
+A sleek and responsive web application that delivers real-time weather updates and humidity levels for any city in the world.
+Built with Flask + JavaScript and powered by the OpenWeatherMap API.
 
-## 🌟 Features
+✨ Features
 
-- **Live Weather Data**: Get the current temperature and conditions for any city.
-- **Humidity Levels**: View the humidity percentage for accurate information.
-- **Responsive Design**: A clean, modern interface that works on both desktop and mobile devices.
+✅ Live Weather Data – Get up-to-date temperature & weather conditions.
+💧 Humidity Levels – Know exactly how humid it feels outside.
+📱 Responsive UI – Clean, modern interface for both desktop & mobile.
+⚡ Fast & Lightweight – Simple architecture, quick load times.
 
-## 🛠️ Technology Stack
+🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Flask (Python)
-- **API**: [OpenWeatherMap API](https://openweathermap.org/api)
+Frontend: HTML, CSS, JavaScript
 
-## 🚀 Getting Started
+Backend: Flask (Python)
 
-### Prerequisites
+API: OpenWeatherMap API
 
-- Python 3.x
-- A valid API key from [OpenWeatherMap](https://openweathermap.org/api)
+🚀 Getting Started
+🔧 Prerequisites
 
-### Installation
+Python 3.x installed
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/AshmitThakur23/weather-forecast.git](https://github.com/AshmitThakur23/weather-forecast.git)
-    ```
-2.  Navigate into the project directory:
-    ```bash
-    cd weather-forecast
-    ```
-3.  Install the required Python packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+A valid OpenWeatherMap API Key
 
-### How to Run
+📦 Installation
+# Clone the repo
+git clone https://github.com/AshmitThakur23/weather-forecast.git
 
-1.  Create a file named `.env` in the root directory and add your API key:
-    ```
-    API_KEY=YOUR_OPENWEATHERMAP_API_KEY
-    ```
-2.  Run the Flask application:
-    ```bash
-    flask run
-    ```
-3.  Open your browser and go to `http://127.0.0.1:5000`.
+# Navigate into project directory
+cd weather-forecast
 
-## 📸 Screenshots
+# Install dependencies
+pip install -r requirements.txt
 
-[Insert a screenshot of your working application here using an image link]
+▶️ Run the App
 
-## 🤝 Contribution
+Create a .env file in the project root and add:
 
-Contributions are welcome! Please feel free to open a pull request or submit an issue.
+API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+
+
+Start the server:
+
+flask run
+
+
+Open your browser → http://127.0.0.1:5000
+
+📸 Screenshots
+
+
+(Replace with your own screenshot!)
+
+🤝 Contributing
+
+Contributions are welcome 🎉
+
+Fork this repo
+
+Create a new branch (feature-xyz)
+
+Commit your changes
+
+Open a Pull Request
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub
+!
