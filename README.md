@@ -61,7 +61,7 @@ Built with 🐍 Flask, ⚡ JavaScript, and powered by the reliable 🌐 OpenWeat
 ## 📸 Screenshots
 
 > _Replace this section with your own app screenshots!_  
-> ![Uploading Screenshot 2025-09-06 185201.png…]()
+> Screenshot 2025-09-06 185201.png
 
 
 ---
