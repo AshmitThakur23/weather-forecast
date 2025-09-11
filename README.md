@@ -60,9 +60,7 @@ Built with 🐍 Flask, ⚡ JavaScript, and powered by the reliable 🌐 OpenWeat
 
 ## 📸 Screenshots
 
-> _Replace this section with your own app screenshots!_  
-> Screenshot 2025-09-06 185201.png
-
+![App Screenshot](image1)
 
 ---
 
